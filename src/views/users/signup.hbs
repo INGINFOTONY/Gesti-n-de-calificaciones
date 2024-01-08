@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Registro usuarios
+            </div>
+            <div class="card-body">
+                <form action="/users/signup" method="POST">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example1">Usuario</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su usuario" name="usuario" value="{{usuario}}" />
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example1">Correo electronico</label>
+                            <input type="email" class="form-control" placeholder="Ingrese su correo elecotronico" name="email" value="{{email}}"/>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label">contraseña</label>
+                            <input type="password" class="form-control" placeholder="Ingrese su contraseña" name="password" value="{{password}}"/>
+                        </div>
+
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label">Confirme su contraseña</label>
+                            <input type="password" class="form-control" placeholder="Confirme su contraseña" name="confirm_password" value="{{confirm_password}}"/>
+                        </div>
+                        <!-- Submit button -->
+                
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Guardar usuario</button>        
+                </form>
+             </div>
+        </div>
+    </div>
+</div>
